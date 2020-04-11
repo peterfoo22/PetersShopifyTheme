@@ -1,0 +1,49 @@
+.h2 {
+	color:red
+}
+
+
+@media(max-width:600px){
+
+	.social-sharing{
+		display:none;    
+    }
+  
+}
+
+
+/*
+
+Notes from Joe: 
+
+You'll develop your own style over time, below is how I would write this.
+
+You might have custom CSS files get to thousans of lines of code, blocking like this will help.
+
+*/
+
+
+
+/*==============
+	GLOBAL
+==============*/
+h2 { // Most sites won't add a .h2 class for an h2 element, it's redundant. Some themes might, so you can control either way but I would target the element when you can.
+  color: red; 
+}
+
+
+
+/*==============
+	PRODUCT
+==============*/
+
+@media screen and (max-width: 600px) { // Note: I always include "screen" on these.
+
+  /* Hide social share widgets on mobile */
+  .social-sharing {
+    display: none;
+  }
+  
+}
+
+/* You don't need to comment everything, I just did here to show style example I use.
